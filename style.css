@@ -1,0 +1,61 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(background-image/wfo-wfh.jpg);
+    background-repeat: round;
+}
+
+header {
+    max-height: 80px;
+    background-color: #c6dcea;
+    border: 1px solid rgb(5, 80, 83);
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.user i {
+    cursor: pointer;
+}
+
+.search {
+    margin-right: 170px;
+}
+
+.search input, button {
+    height: 25px;
+}
+
+.search button {
+    width: 30px;
+}
+
+.logo img {
+    width: 180px;
+}
+
+main {
+    width: 800px;
+    height: 100vh;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    background-color:#c6dcea;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 10px 10px;
+}
+

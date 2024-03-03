@@ -161,7 +161,7 @@ function creaElemento(risultato) {
   lista.innerText = ""; // questo mi serve per fare in modo che non la lista non si ripete
   if (risultato.count === 0 && professione.value === "" || luogo.value === "") {
     // se per caso non esce nessun risulato della ricerca che hai fatto allora ti dirà questa frase
-    lista.innerText = "Nessun Lavoro trovato" 
+    lista.innerText = "Nessun lavoro trovato" 
   } else {
     let ul = document.createElement("ul"); // creo un ul che poi aggiungerò al div
     // uso un for each per iterare su ogni singolo lavoro che è dentro una variabile di nome risultato che ho creato nella riga 128

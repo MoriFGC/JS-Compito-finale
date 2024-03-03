@@ -3,24 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Work Life</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Trova Lavoro</h1>
-    <form>
-        <label for="location">Cerca posizione</label>
-        <input type="text" placeholder="Search location" id="location">
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo/work-2.png" alt="logo">
+            </div>
+            <div class="search">
+                <input type="text">
+                <button>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
 
-        <label for="title">Cerca professione</label>
-        <input type="text" placeholder="Search title" id="title">
+            <div class="user">
+                <i class="fa-regular fa-user"></i>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <form>
+            <label for="location">Cerca posizione:</label>
+            <input type="text" placeholder="Search location" id="location">
 
-        <input type="button" id="button" value="Submit">
-    </form>
+            <label for="title">Cerca professione:</label>
+            <input type="text" placeholder="Search title" id="title">
 
-    <div id="lista">
+            <input type="button" id="button" value="Submit">
+        </form>
+    
 
-    </div>
+        <div id="lista">
+
+        </div>
+    </main>
     <script src="scaricabile.js"></script>
+    <script src="https://kit.fontawesome.com/83cea38f14.js" crossorigin="anonymous"></script>
 </body>
 </html>
