@@ -125,11 +125,13 @@ const jobs = [
 
 // creo una funzione con i parametri title e location che userò dopo per collegarci i due input di testo in cui andrò a inserire la professione e il luogo
 function search(title, location) {
+  // in questo oggetto inserisco il luogo e il lavoro che uscirà come risultato alla fine
   let risultato = {
     lavoro : [],
     count: 0
   };
   
+  // creo un for per iterare su ogni singolo elemento dell'array jobs
   for (let i = 0; i < jobs.length; i++) {
     // faccio in modo che se ci scrivo in minuscolo o maiuscolo mi trova comunque il risultato e includes mi serve in caso non riesco a scrivere il nome della professioneper intero
     if (jobs[i].title.toLowerCase().includes(title.toLowerCase()) && jobs[i].location.toLowerCase().includes(location.toLowerCase())) {
@@ -147,6 +149,7 @@ let button = document.getElementById("button");
 let professione = document.getElementById("title");
 let luogo = document.getElementById("location");
 
+// qui faccio in modo che se schiaccio il bottone che è presente all'interno del form in html faccio partire la funzione search 
 button.addEventListener("click", function() {
   risultato = search(professione.value, luogo.value);
   //console.log(risultato);   FUNZIONA!!!
